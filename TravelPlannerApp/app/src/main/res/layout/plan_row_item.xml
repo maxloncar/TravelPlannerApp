@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/planRowItemLayoutMargin"
+    android:background="@drawable/card_background">
+
+    <TextView
+        android:id="@+id/tv_planName"
+        android:layout_width="@dimen/planNameWidth"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/planNamePadding"
+        android:text="@string/plannedDestination"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/planNameTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_option"
+        android:layout_width="@dimen/imageMoreHeightAndWidth"
+        android:layout_height="@dimen/imageMoreHeightAndWidth"
+        android:layout_marginTop="@dimen/imageMoreMarginTop"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_planName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_planImage"
+        android:layout_width="@dimen/userIconHeightAndWidth"
+        android:layout_height="@dimen/userIconHeightAndWidth"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/destinationImage"
+        android:padding="@dimen/tv_padding"
+        android:scaleType="fitXY"
+        android:src="@drawable/caribbean"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_planName" />
+
+    <TextView
+        android:id="@+id/tv_planDate"
+        android:layout_width="@dimen/planTextViewsWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/planTextViewMarginStart"
+        android:layout_marginTop="@dimen/planTextViewMarginTop"
+        android:text="@string/planDate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/planTextViewTextSize"
+        app:layout_constraintStart_toEndOf="@+id/iv_planImage"
+        app:layout_constraintTop_toBottomOf="@id/tv_planName" />
+
+    <TextView
+        android:id="@+id/tv_planPrice"
+        android:layout_width="@dimen/planTextViewsWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/destinationCountryPriceDateLocationDescriptionMarginTop"
+        android:text="@string/planPrice"
+        android:textColor="@color/black"
+        android:textSize="@dimen/planTextViewTextSize"
+        app:layout_constraintStart_toStartOf="@id/tv_planDate"
+        app:layout_constraintTop_toBottomOf="@id/tv_planDate" />
+
+    <TextView
+        android:id="@+id/tv_planNote"
+        android:layout_width="@dimen/planTextViewsWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/destinationCountryPriceDateLocationDescriptionMarginTop"
+        android:text="@string/planNote"
+        android:textColor="@color/black"
+        android:textSize="@dimen/planTextViewTextSize"
+        app:layout_constraintStart_toStartOf="@id/tv_planPrice"
+        app:layout_constraintTop_toBottomOf="@id/tv_planPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

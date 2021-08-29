@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DetailFragment">
+
+    <ImageView
+        android:id="@+id/iv_detailDestination"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detailDestinationImageHeight"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/destinationImage"
+        android:scaleType="centerCrop"
+        android:src="@drawable/caribbean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/arrowBackMarginTopAndStart"
+        android:layout_marginTop="@dimen/arrowBackMarginTopAndStart"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_detailDestinationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/detailDestinationNameDescriptionMarginStart"
+        android:layout_marginTop="@dimen/detailDestinationNamePhotographsAboutButtonPlanMarginTop"
+        android:text="@string/destinationName"
+        android:textColor="@color/black"
+        android:textSize="@dimen/findYourAndTopDestinationsTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_detailDestination" />
+
+    <TextView
+        android:id="@+id/tv_detailDestinationCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/destinationCountryPriceDateLocationDescriptionMarginTop"
+        android:text="@string/destinationCountry"
+        android:textColor="@color/detailTextColor"
+        android:textSize="@dimen/detailTextSize"
+        app:layout_constraintStart_toStartOf="@+id/tv_detailDestinationName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailDestinationName" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/destinationCountryPriceDateLocationDescriptionMarginTop"
+        android:text="@string/price"
+        android:textColor="@color/detailTextColor"
+        android:textSize="@dimen/detailTextSize"
+        app:layout_constraintStart_toStartOf="@+id/tv_detailDestinationCountry"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailDestinationCountry" />
+
+    <TextView
+        android:id="@+id/tv_detailDestinationPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/image1DetailTextMarginStart"
+        android:text="@string/destinationDate"
+        android:textSize="@dimen/detailDataTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_price"
+        app:layout_constraintStart_toEndOf="@+id/tv_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_price" />
+
+    <ImageView
+        android:id="@+id/iv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/destinationCountryPriceDateLocationDescriptionMarginTop"
+        android:src="@drawable/ic_date"
+        app:layout_constraintStart_toStartOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_detailDestinationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/image1DetailTextMarginStart"
+        android:text="@string/destinationDate"
+        android:textSize="@dimen/detailDataTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_date"
+        app:layout_constraintStart_toEndOf="@+id/iv_date"
+        app:layout_constraintTop_toTopOf="@+id/iv_date" />
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/destinationCountryPriceDateLocationDescriptionMarginTop"
+        android:src="@drawable/ic_location"
+        app:layout_constraintStart_toStartOf="@id/iv_date"
+        app:layout_constraintTop_toBottomOf="@id/iv_date" />
+
+    <TextView
+        android:id="@+id/tv_detailDestinationLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/image1DetailTextMarginStart"
+        android:paddingEnd="@dimen/detailDestinationLocationPaddingEnd"
+        android:text="@string/destinationLocation"
+        android:textSize="@dimen/detailDataTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_location"
+        app:layout_constraintStart_toEndOf="@+id/iv_location"
+        app:layout_constraintTop_toTopOf="@+id/iv_location"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tv_photographs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/detailDestinationNamePhotographsAboutButtonPlanMarginTop"
+        android:text="@string/photographs"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/iv_location"
+        app:layout_constraintTop_toBottomOf="@+id/iv_location" />
+
+    <ImageView
+        android:id="@+id/iv_image1"
+        android:layout_width="@dimen/destinationImageWidthAndHeight"
+        android:layout_height="@dimen/destinationImageWidthAndHeight"
+        android:layout_marginStart="@dimen/image1DetailTextMarginStart"
+        android:layout_marginTop="@dimen/imagesMarginTop"
+        android:scaleType="fitXY"
+        android:src="@drawable/caribbean"
+        app:layout_constraintEnd_toStartOf="@id/iv_image2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_photographs" />
+
+    <ImageView
+        android:id="@+id/iv_image2"
+        android:layout_width="@dimen/destinationImageWidthAndHeight"
+        android:layout_height="@dimen/destinationImageWidthAndHeight"
+        android:layout_marginStart="@dimen/image2AndImage3MarginStart"
+        android:scaleType="fitXY"
+        android:src="@drawable/caribbean"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_image1"
+        app:layout_constraintEnd_toStartOf="@id/iv_image3"
+        app:layout_constraintStart_toEndOf="@+id/iv_image1"
+        app:layout_constraintTop_toTopOf="@+id/iv_image1" />
+
+    <ImageView
+        android:id="@+id/iv_image3"
+        android:layout_width="@dimen/destinationImageWidthAndHeight"
+        android:layout_height="@dimen/destinationImageWidthAndHeight"
+        android:layout_marginStart="@dimen/image2AndImage3MarginStart"
+        android:scaleType="fitXY"
+        android:src="@drawable/caribbean"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_image2"
+        app:layout_constraintStart_toEndOf="@+id/iv_image2"
+        app:layout_constraintTop_toTopOf="@+id/iv_image2" />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/detailDestinationNamePhotographsAboutButtonPlanMarginTop"
+        android:text="@string/about"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_photographs"
+        app:layout_constraintTop_toBottomOf="@+id/iv_image1" />
+
+    <TextView
+        android:id="@+id/tv_detailDestinationDescription"
+        android:layout_width="@dimen/detailDestinationDescriptionWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/detailDestinationNameDescriptionMarginStart"
+        android:layout_marginTop="@dimen/destinationCountryPriceDateLocationDescriptionMarginTop"
+        android:layout_marginEnd="@dimen/detailDestinationDescriptionMarginEnd"
+        android:text="@string/destinationDescription"
+        android:textSize="@dimen/detailDataTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_about" />
+
+    <Button
+        android:id="@+id/b_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_MarginStart"
+        android:layout_marginTop="@dimen/detailDestinationNamePhotographsAboutButtonPlanMarginTop"
+        android:layout_marginEnd="@dimen/et_MarginEnd"
+        android:background="@drawable/b_background"
+        android:text="@string/plan"
+        android:textAllCaps="false"
+        android:textSize="@dimen/b_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_detailDestinationDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

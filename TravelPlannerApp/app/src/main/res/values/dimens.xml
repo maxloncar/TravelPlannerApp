@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="userIconHeightAndWidth">150dp</dimen>
+    <dimen name="et_MarginStart">20dp</dimen>
+    <dimen name="et_MarginEnd">20dp</dimen>
+    <dimen name="marginTop">20dp</dimen>
+    <dimen name="et_passwordAndNameMarginTop">15dp</dimen>
+    <dimen name="et_padding">16dp</dimen>
+    <dimen name="tv_padding">5dp</dimen>
+    <dimen name="b_radius">30dp</dimen>
+    <dimen name="background_radius">8dp</dimen>
+    <dimen name="et_radius">10dp</dimen>
+    <dimen name="b_textSize">21sp</dimen>
+    <dimen name="b_marginTop">30dp</dimen>
+    <dimen name="loginAndRegisterTitle">30sp</dimen>
+    <dimen name="drawablePadding">10dp</dimen>
+    <dimen name="searchDestinationLayoutHeight">150dp</dimen>
+    <dimen name="findYourAndDestinationsMarginTop">10dp</dimen>
+    <dimen name="findYourMarginStart">20dp</dimen>
+    <dimen name="findYourAndTopDestinationsTextSize">18sp</dimen>
+    <dimen name="topDestinationsPaddingBot">5dp</dimen>
+    <dimen name="destinationsTextSize">27sp</dimen>
+    <dimen name="userProfileImageHeightAndWidth">64dp</dimen>
+    <dimen name="userProfileImageMarginEnd">20dp</dimen>
+    <dimen name="destinationImageWidthAndHeight">100dp</dimen>
+    <dimen name="destinationNameMarginTop">15dp</dimen>
+    <dimen name="destinationNameTextSize">15sp</dimen>
+    <dimen name="destinationCountryAndPriceTextSize">13sp</dimen>
+    <dimen name="destinationCountryPriceDateLocationDescriptionMarginTop">5dp</dimen>
+    <dimen name="destinationNameMarginStart">5dp</dimen>
+    <dimen name="arrowIconWidth">37dp</dimen>
+    <dimen name="destinationDrawablePadding">5dp</dimen>
+    <dimen name="recyclerViewHeight">480dp</dimen>
+    <dimen name="arrowBackMarginTopAndStart">16dp</dimen>
+    <dimen name="detailTextSize">14sp</dimen>
+    <dimen name="detailDataTextSize">12sp</dimen>
+    <dimen name="imagesMarginTop">8dp</dimen>
+    <dimen name="detailDestinationImageHeight">200dp</dimen>
+    <dimen name="image1DetailTextMarginStart">10dp</dimen>
+    <dimen name="image2AndImage3MarginStart">20dp</dimen>
+    <dimen name="searchViewHeight">40dp</dimen>
+    <dimen name="detailDestinationDescriptionWidth">0dp</dimen>
+    <dimen name="detailDestinationNameDescriptionMarginStart">16dp</dimen>
+    <dimen name="detailDestinationDescriptionMarginEnd">16dp</dimen>
+    <dimen name="detailDestinationNamePhotographsAboutButtonPlanMarginTop">10dp</dimen>
+    <dimen name="detailDestinationLocationPaddingEnd">50dp</dimen>
+    <!-- New Plan -->
+    <dimen name="newPlanPadding">20dp</dimen>
+    <dimen name="planDestinationNameTextSize">30sp</dimen>
+    <dimen name="textInputLayoutMargin">8dp</dimen>
+    <dimen name="layoutWidth">0dp</dimen>
+    <!-- Plan row item -->
+    <dimen name="planRowItemLayoutMargin">10dp</dimen>
+    <dimen name="planNameTextSize">20sp</dimen>
+    <dimen name="planNamePadding">10dp</dimen>
+    <dimen name="planTextViewMarginStart">5dp</dimen>
+    <dimen name="planTextViewMarginTop">5dp</dimen>
+    <dimen name="planTextViewTextSize">15sp</dimen>
+    <dimen name="planTextViewsWidth">185dp</dimen>
+    <dimen name="imageMoreHeightAndWidth">30dp</dimen>
+    <dimen name="imageMoreMarginTop">10dp</dimen>
+    <dimen name="planNameWidth">300dp</dimen>
+    <!-- Fragment plan -->
+    <dimen name="yourPlansTextSize">23sp</dimen>
+    <dimen name="recyclerViewTextViewMarginTop">10dp</dimen>
+    <dimen name="yourPlansPaddingBot">5dp</dimen>
+    <dimen name="planRecyclerViewHeight">600dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+</resources>

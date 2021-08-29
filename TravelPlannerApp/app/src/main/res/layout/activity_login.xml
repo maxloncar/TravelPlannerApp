@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".activities.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/et_MarginStart"
+            android:layout_marginEnd="@dimen/et_MarginEnd"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/userIconHeightAndWidth"
+                android:layout_height="@dimen/userIconHeightAndWidth"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/userImage"
+                android:src="@drawable/user_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text="@string/logInTitle"
+                android:textColor="@color/white"
+                android:textSize="@dimen/loginAndRegisterTitle"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_loginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:autofillHints="@string/emailHint"
+                android:background="@drawable/et_background"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:hint="@string/emailHint"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/et_padding"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/et_loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/et_passwordAndNameMarginTop"
+                android:autofillHints="@string/passwordHint"
+                android:background="@drawable/et_background"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:hint="@string/passwordHint"
+                android:inputType="textPassword"
+                android:padding="@dimen/et_padding"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/b_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/b_marginTop"
+                android:background="@drawable/b_background"
+                android:text="@string/logIn"
+                android:textAllCaps="false"
+                android:textSize="@dimen/b_textSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_dontHaveAnAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/tv_dontHaveAnAccount"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/tv_register"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

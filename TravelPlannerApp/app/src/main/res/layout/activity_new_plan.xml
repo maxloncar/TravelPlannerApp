@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/newPlanPadding"
+    tools:context=".activities.NewPlanActivity">
+
+    <TextView
+        android:id="@+id/tv_planDestinationName"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/destinationName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/planDestinationNameTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_planDestinationImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detailDestinationImageHeight"
+        android:layout_margin="@dimen/textInputLayoutMargin"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/destinationImage"
+        android:scaleType="centerCrop"
+        android:src="@drawable/caribbean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_planDestinationName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_planDate"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/textInputLayoutMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_planDestinationImage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_planDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/planDateHint"
+            android:inputType="text|date|textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_planNumberOfTravelers"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/textInputLayoutMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_planDate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_planNumberOfTravelers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/planNumberOfTravelersHint"
+            android:inputType="number"
+            android:maxLength="2" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_planNote"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutWidth"
+        android:layout_margin="@dimen/textInputLayoutMargin"
+        app:layout_constraintBottom_toTopOf="@id/b_cancelPlan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_planNumberOfTravelers">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_planNote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/planNoteHint"
+            android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+            android:maxLines="10"
+            android:scrollbars="vertical" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/b_cancelPlan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/b_background"
+        android:text="@string/cancelPlan"
+        android:textAllCaps="false"
+        android:textSize="@dimen/b_textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_planNote" />
+
+    <Button
+        android:id="@+id/b_addPlan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/b_background"
+        android:text="@string/addPlan"
+        android:textAllCaps="false"
+        android:textSize="@dimen/b_textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/b_cancelPlan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

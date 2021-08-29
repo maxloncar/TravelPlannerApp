@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "576352689726",
+    "firebase_url": "https://travelplannerapp-e5c14-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "travelplannerapp-e5c14",
+    "storage_bucket": "travelplannerapp-e5c14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576352689726:android:82600b79b398b1a4acfb6f",
+        "android_client_info": {
+          "package_name": "com.example.travelplannerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576352689726-62bdt17mb5dn3uuh90252431ku0a146p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTf7kiG87A2X94_0qI4mrY5kC3mflP6kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576352689726-62bdt17mb5dn3uuh90252431ku0a146p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
