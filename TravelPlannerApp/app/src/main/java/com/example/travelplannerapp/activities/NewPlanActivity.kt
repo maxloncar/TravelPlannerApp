@@ -82,10 +82,10 @@ class NewPlanActivity : AppCompatActivity() {
         if (editPlanDate == null || editPlanNumberOfTravelers == null) {
             when {
                 TextUtils.isEmpty(newPlanBinding.etPlanDate.text.toString().trim { it <= ' ' }) -> {
-                    Toast.makeText(this, "Please enter the desired date range.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Please enter the correct date.", Toast.LENGTH_SHORT).show()
                 }
 
-                TextUtils.isEmpty(newPlanBinding.etPlanNumberOfTravelers.text.toString().trim { it <= ' ' }) -> {
+                TextUtils.isEmpty(newPlanBinding.etPlanNumberOfTravelers.text.toString().trim { it <= ' ' }) || (newPlanBinding.etPlanNumberOfTravelers.text.toString() == "0") -> {
                     Toast.makeText(this, "Please enter the number of travelers.", Toast.LENGTH_SHORT).show()
                 }
                 else -> {
@@ -113,11 +113,22 @@ class NewPlanActivity : AppCompatActivity() {
             mutableMap["planNumberOfTravelers"] = newPlanBinding.etPlanNumberOfTravelers.text.toString().toInt()
             mutableMap["planNote"] = newPlanBinding.etPlanNote.text.toString()
             mutableMap["planPrice"] = (editPlanPrice.toString().toInt() / editPlanNumberOfTravelers.toString().toInt()) * newPlanBinding.etPlanNumberOfTravelers.text.toString().toInt()
-            planRepository.updatePlan(editDestinationName!!, mutableMap).addOnSuccessListener {
-                Toast.makeText(this, "Plan for $editDestinationName is updated.", Toast.LENGTH_SHORT).show()
-                finish()
-            }.addOnFailureListener {
-                Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
+            when {
+                TextUtils.isEmpty(newPlanBinding.etPlanDate.text.toString().trim { it <= ' ' }) -> {
+                    Toast.makeText(this, "Please enter the correct date.", Toast.LENGTH_SHORT).show()
+                }
+
+                TextUtils.isEmpty(newPlanBinding.etPlanNumberOfTravelers.text.toString().trim { it <= ' ' }) || (newPlanBinding.etPlanNumberOfTravelers.text.toString() == "0") -> {
+                    Toast.makeText(this, "Please enter the number of travelers.", Toast.LENGTH_SHORT).show()
+                }
+                else -> {
+                    planRepository.updatePlan(editDestinationName!!, mutableMap).addOnSuccessListener {
+                        Toast.makeText(this, "Plan for $editDestinationName is updated.", Toast.LENGTH_SHORT).show()
+                        finish()
+                    }.addOnFailureListener {
+                        Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
+                    }
+                }
             }
         }
     }
