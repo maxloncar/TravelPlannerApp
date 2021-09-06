@@ -1,2 +1,3 @@
 # TravelPlannerApp
-Travel Planner Application - Razvoj mobilnih aplikacija
+Travel Planner Application - Kotlin App
+Mobile Development
